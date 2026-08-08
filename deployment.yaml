@@ -5,7 +5,7 @@ metadata:
   name: hello-node
 
 spec:
-  replicas: 2
+  replicas: 5
 
   selector:
     matchLabels:
@@ -18,9 +18,20 @@ spec:
 
     spec:
       containers:
-      - name: hello-node
-        image: surajsdm/hello-node:v2
-        imagePullPolicy: Always
+        - name: hello-node
+          image: surajsdm/hello-node:54
+          imagePullPolicy: Always
 
-        ports:
-        - containerPort: 3000
+          ports:
+            - containerPort: 3000
+
+          env:
+            - name: APP_VERSION
+              value: "54"
+
+            - name: BUILD_NUMBER
+              value: "54"
+
+            - name: GIT_COMMIT
+              value: "a14512f"
+              
