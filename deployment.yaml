@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: hello-node
-        image: surajsdm/hello-node:40
+        image: surajsdm/hello-node:41
         imagePullPolicy: Always
 
         ports:
