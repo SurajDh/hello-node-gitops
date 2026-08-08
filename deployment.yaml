@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: hello-node
-          image: surajsdm/hello-node:49
+          image: surajsdm/hello-node:50
           imagePullPolicy: Always
 
           ports:
@@ -27,11 +27,11 @@ spec:
 
           env:
             - name: APP_VERSION
-              value: "49"
+              value: "50"
 
             - name: BUILD_NUMBER
-              value: "49"
+              value: "50"
 
             - name: GIT_COMMIT
-              value: "C:\Users\super\.jenkins\workspace\hello-node-ci>git rev-parse --short=7 HEAD 
+              value: "50bbaa8"
 8152b52"
