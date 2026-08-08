@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: hello-node
-          image: surajsdm/hello-node:53
+          image: surajsdm/hello-node:54
           imagePullPolicy: Always
 
           ports:
@@ -27,11 +27,11 @@ spec:
 
           env:
             - name: APP_VERSION
-              value: "53"
+              value: "54"
 
             - name: BUILD_NUMBER
-              value: "53"
+              value: "54"
 
             - name: GIT_COMMIT
-              value: "228d427"
+              value: "a14512f"
               
